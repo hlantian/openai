@@ -57,7 +57,7 @@ public class OpenAiApiFunctionsWithStreamExample {
         while (true) {
             ChatCompletionRequest chatCompletionRequest = ChatCompletionRequest
                     .builder()
-                    .model("gpt-3.5-turbo-0613")
+                    .model("gpt-3.5-turbo")
                     .messages(messages)
                     .functions(functionExecutor.getFunctions())
                     .functionCall(ChatCompletionRequest.ChatCompletionRequestFunctionCall.of("auto"))
